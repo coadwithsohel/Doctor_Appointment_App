@@ -50,7 +50,7 @@ const MyProfile = () => {
               type="text"
               value={userData.phone}
               onChange={(e) =>
-                setUserData((prev) => ({ ...prev, name: e.target.value }))
+                setUserData((prev) => ({ ...prev, phone: e.target.value }))
               }
             />
           ) : (

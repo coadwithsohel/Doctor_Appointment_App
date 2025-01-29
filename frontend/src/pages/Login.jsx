@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 
 const Login = () => {
   const [state, setState] = useState("Sign Up");
@@ -25,12 +25,11 @@ const Login = () => {
             <input
               className="border border-zinc-300 rounded w-full p-2 mt-1"
               type="text"
-              onChange={(e) => setName(e.target.name)}
+              onChange={(e) => setName(e.target.fullName)}
               placeholder="Enter your full name"
               value={name}
               required
             />
-
           </div>
         )}
 
@@ -39,10 +38,10 @@ const Login = () => {
           <input
             className="border border-zinc-300 rounded w-full p-2 mt-1"
             type="email"
-            onChange={(e) => setEmail(e.target.name)}
+            onChange={(e) => setEmail(e.target.email)}
             placeholder="Enter your email"
             value={email}
-            required
+            // required
           />
         </div>
         <div className=" w-full ">
@@ -50,7 +49,7 @@ const Login = () => {
           <input
             className="border border-zinc-300 rounded w-full p-2 mt-1"
             type="password"
-            onChange={(e) => setPassword(e.target.name)}
+            onChange={(e) => setPassword(e.target.password)}
             placeholder="Enter your password"
             value={password}
             required
